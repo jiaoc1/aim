@@ -22,7 +22,7 @@
       "id": "ac",
       "name": "Accessibility",
       "icon": "universal-access",
-      "metrics": []
+      "metrics": ["m99"]
     }
   ],
   "metrics": {
@@ -391,6 +391,44 @@
           ]
         }
       ]
-    }
+    },
+    "m99": {
+      "id": "m99",
+      "name": "Color blindness",
+      "description": "These metrics indicate information loss for users with colour vision deficiencies. The metrics are physiologically motivated and currently handle anomalous trichromacy and dichromacy. Evidence for the metric come from controlled experiments.",
+      "evidence": 4,
+      "relevance": 5,
+      "speed": 1,
+      "visualizationType": "b64",
+      "references": [
+        {
+          "title": "Machado, G. M., Oliveira, M. M., and Fernandes, L. A. F. (2009). A Physiologically-based Model for Simulation of Color Vision Deficiency. IEEE Transactions on Visualization and Computer Graphics, 15(6), 1291-1298. doi: https://doi.org/10.1109/TVCG.2009.113",
+          "url": "https://doi.org/10.1109/TVCG.2009.113"
+        }
+      ],
+      "results": [
+        {
+          "id": "m99_0",
+          "index": 0,
+          "type": "b64",
+          "name": "Deuteranopia",
+          "description": "Red-green colour blindness, lacking red cones."
+        },
+        {
+          "id": "m99_1",
+          "index": 1,
+          "type": "b64",
+          "name": "Protanopia",
+          "description": "Red-green colour blindness, lacking green cones."
+        },
+        {
+          "id": "m99_2",
+          "index": 2,
+          "type": "b64",
+          "name": "Tritanopia",
+          "description": "Blue-yellow colour blindness."
+        }
+      ]
+    }   
   }
 }
